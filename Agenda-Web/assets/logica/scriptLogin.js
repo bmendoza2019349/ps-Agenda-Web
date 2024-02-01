@@ -1,19 +1,13 @@
-const usuariosPredeterminados = [
-    { usuario: 'admin', contraseña: 'admin' },
-    { usuario: 'braulio', contraseña: 'braulio' }
-];
+const usuario = 'admin';
+const contraseña = 'admin';
 
-function validacionLogin() {
-    const usuarioInput = document.getElementById('username').value;
-    const contraseñaInput = document.getElementById('password').value;
+function validacionLogin(){
+    const usuarioIngresado = document.getElementById('username').value;
+    const contraseñaIngresada = document.getElementById('password').value;
 
-    const usuarioValido = usuariosPredeterminados.some(user => 
-        user.usuario === usuarioInput && user.contraseña === contraseñaInput
-    );
-
-    if (usuarioValido) {
+    if(usuario === usuarioIngresado && contraseña === contraseñaIngresada){
         alert('Inicio de sesión exitoso');
-    } else {
+    }else{
         alert('Credenciales incorrectas. Por favor, inténtalo de nuevo.');
     }
 }

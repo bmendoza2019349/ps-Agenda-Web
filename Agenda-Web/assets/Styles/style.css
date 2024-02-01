@@ -197,3 +197,33 @@ html {
       bottom: 100%;
     }
   }
+ @media (min-width: 390px){
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Ajusta la altura de acuerdo a tus necesidades */
+    }
+    
+    .login-box,
+    .login-box2 {
+      width: 400px;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.5);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      margin: 0 20px;
+    }
+    
+    .login-box {
+      position: absolute;
+      right: 0;
+    }
+    
+    .login-box2 {
+      position: relative;
+      left: 35%; /* Puedes ajustar este valor según tus necesidades */
+      z-index: 1; /* Para asegurar que esté encima de .login-box */
+    }
+  }
