@@ -1,3 +1,24 @@
-body{
-    background: #243b55;
+.botones {
+    text-align: center;
+}
+
+.botones a {
+    margin: 0 10px;
+}
+
+.navbar {
+    background: #b1e8d0;
+}
+
+.dropdown {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #234666;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 7px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
 }
