@@ -11,7 +11,9 @@ const contactos = [
     { id: '9', nombre: 'Sofia', apellido: 'Hernandez', telefono: '23456789', correo: 'sofia@example.com', edad: 29 }
 
 ];
+
 const tbody = document.getElementById('ListaContactos');
+
 contactos.forEach(function (contacto) {
     const row = tbody.insertRow();
     const cellNombre = row.insertCell(0);
@@ -23,10 +25,4 @@ contactos.forEach(function (contacto) {
     cellApellido.innerHTML = contacto.apellido;
     cellTelefono.innerHTML = contacto.telefono;
 
-    var detalleButton = document.createElement('button');
-    detalleButton.innerHTML = '<img src="../resource/detalles.png" alt="" width="25">';
-    detalleButton.onclick = function() {
-        window.location.href = 'prueba.html';
-    };
-    cellDetalle.appendChild(detalleButton);
 });
