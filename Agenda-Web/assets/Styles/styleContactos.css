@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(135deg, #153667, #4e085f);
-}
-
-
-
 nav {
     height: 80px;
     width: 100%;
@@ -94,11 +88,19 @@ li a:hover {
         color: red;
     }
 
-    #check:checked ~ ul {
+    #check:checked~ul {
         left: 0;
     }
 
 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #153667, #4e085f);
 }
 
 .card{
@@ -118,18 +120,6 @@ li a:hover {
     background: #b1e8d0;
 }
 
-.dropdown {
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #234666;
-    border: 0;
-    color: #FFFFFF;
-    border-radius: 7px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-}
 
 tbody{
     color: #fff;
@@ -138,4 +128,30 @@ tbody{
 h2{
     color: #fff;
 }
+.modal-body .card .card-body {
+    background: #063970;
+    color: #eeeee4;
+}
+
+.btn-close {
+    background: #21130d;
+    color: #abdbe3;
+    width: 10px;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+
+
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
 
