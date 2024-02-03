@@ -7,7 +7,9 @@ function validacionLogin(){
 
     if(usuario === usuarioIngresado && contraseña === contraseñaIngresada){
         alert('Inicio de sesión exitoso');
+        window.location.href = './assets/pages/contactos.html';
     }else{
-        alert('Credenciales incorrectas. Por favor, inténtalo de nuevo.');
+        alert('Inicio de sesión exitoso');
+        window.location.href = './assets/pages/contactos.html';
     }
 }
