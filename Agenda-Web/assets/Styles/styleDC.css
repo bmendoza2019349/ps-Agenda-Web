@@ -4,13 +4,12 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
 }
 
-body{
+.cuerpo .d-flex{
     background: linear-gradient(135deg, #153667, #4e085f);
 }
-
-
 
 nav {
     height: 80px;
@@ -101,41 +100,42 @@ li a:hover {
 
 }
 
-.card{
+.card-body2 {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
     background: linear-gradient(135deg, #153667, #4e085f);
-    color: #fff;
 }
 
-.botones {
-    text-align: center;
+.d-flex {
+    display: block;
+    flex-wrap: wrap; 
 }
 
-.botones a {
-    margin: 0 10px;
+.card {
+    width: 100%; 
+
 }
 
-.navbar {
-    background: #b1e8d0;
+#contactosContainer {
+    width: 48%;
+    margin-right: 2%; 
+    margin-bottom: 10px;
 }
 
-.dropdown {
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #234666;
-    border: 0;
-    color: #FFFFFF;
-    border-radius: 7px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
+.contacto {
+    margin-bottom: 10px;
 }
 
-tbody{
-    color: #fff;
+.modal-body .card .card-body {
+    background: #063970;
+    color: #eeeee4;
 }
 
-h2{
-    color: #fff;
-}
 
+.modal-header btn-close {
+    background: #21130d;
+    color: #abdbe3;
+    width: 25px;
+}

@@ -5,9 +5,12 @@
     list-style: none;
     box-sizing: border-box;
 }
+
 .card{
     background: linear-gradient(135deg, #153667, #4e085f);
 }
+
+
 
 nav {
     height: 80px;
@@ -112,4 +115,16 @@ tbody{
 
 .card-body{
     color: #fff;
+}
+.dropdown {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #234666;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 7px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
 }
