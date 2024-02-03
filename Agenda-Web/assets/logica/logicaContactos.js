@@ -26,3 +26,27 @@ contactos.forEach(function (contacto) {
     cellTelefono.innerHTML = contacto.telefono;
 
 });
+
+function agregarContacto() {
+    let nombres = document.getElementById('nombres').value;
+    let apellidos = document.getElementById('apellidos').value;
+    let telefono = document.getElementById('telefono').value;
+    let correo = document.getElementById('correo').value;
+    let edad = document.getElementById('edad').value;
+
+    if (nombres && apellidos && telefono && correo && edad) {
+        alert('Contacto agregado:\nNombres: ' + nombres + '\nApellidos: ' + apellidos +
+            '\nTelefono: ' + telefono + '\nCorreo: ' + correo + '\nEdad: ' + edad);
+        limpiarCampos();
+    } else {
+        alert('Por favor, complete todos los campos antes de agregar.');
+    }
+}
+
+function limpiarCampos() {
+    document.getElementById('nombres').value = '';
+    document.getElementById('apellidos').value = '';
+    document.getElementById('telefono').value = '';
+    document.getElementById('correo').value = '';
+    document.getElementById('edad').value = '';
+}
