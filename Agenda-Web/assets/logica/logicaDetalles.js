@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>
     </div>
       `;
-
         contactosContainer.innerHTML += card;
     });
 });
