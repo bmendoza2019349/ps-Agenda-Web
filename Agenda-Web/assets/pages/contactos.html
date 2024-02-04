@@ -11,19 +11,21 @@
 </head>
 
 <body>
-    <nav class="main-nav">
-        <ul class="main-menu" id="main-menu">
+    <nav class="main-nav ">
+
+
+        <ul class="main-menu " id="main-menu">
             <li class="main-menu_item">
-                <a style="margin-left: 30px; border: none" class="main-menu_link"
-                    href="./NuevoContacto.html"><img src="../resource/agregar.png" alt="" width="25">Nuevo Contacto</a>
+                <a style="margin-left: 30px; border: none" class="main-menu_link"  href="./NuevoContacto.html"><img
+                        src="../resource/agregar.png" alt="" width="25">Nuevo Contacto</a>
             </li>
             <li class="main-menu_item">
                 <a style="margin-left: 10px; border: none" class="main-menu_link" href="./contactos.html"><img
                         src="../resource/lista.png" alt="" width="25">Lista Contactos</a>
             </li>
             <li class="main-menu_item">
-                <a style="margin-left: 10px; border: none" class="main-menu_link"
-                    href="./DetalleContacto.html"><img src="../resource/detalles.png" alt="" width="25">Detalles
+                <a style="margin-left: 10px; border: none" class="main-menu_link" href="./DetalleContacto.html"><img
+                        src="../resource/detalles.png" alt="" width="25">Detalles
                     Contactos</a>
             </li>
             <li class="main-menu_item">
@@ -34,40 +36,42 @@
                 <a style="margin-left: 10px; border: none" class="main-menu_link" href="./Todo-list.html"><img
                         src="../resource/tarea.png" alt="" width="25">Tareas</a>
             </li>
-        </ul>
 
-        <div class="dropdown">
-            <button style="border: none; margin-right: 30px;" class="btn btn-outline-light dropdown-toggle"
-                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Admin
-            </button>
-            <div class="dropdown-menu text-center dropdown-menu-right" aria-labellebdy="dropdownMenuButton">
-                <li class="nav-item">
-                    <a type="submit" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#usuario">
-                        <img src="../resource/usuario.png" alt="" width="25">Usario
-                    </a>
-                </li>
-                <div class="dropdown-divider"></div>
-                <form action="Validar" method="POST">
-                    <button name="accion" name="Salir" class="dropdown-item" href="#">Salir</button>
-                </form>
+            <div class="dropdown">
+                <button style="border: none; margin-left: 0px;" class="btn btn-outline-light dropdown-toggle"
+                    type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Admin
+                </button>
+                <div class="dropdown-menu text-center dropdown-menu-left" aria-labellebdy="dropdownMenuButton">
+                    <li class="nav-item">
+                        <a type="submit" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#usuario">
+                            <img src="../resource/usuario.png" alt="" width="25">Usario
+                        </a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <form action="Validar" method="POST">
+                        <button name="accion" name="Salir" class="dropdown-item" href="#">Salir</button>
+                    </form>
+                </div>
             </div>
-        </div>
+
+        </ul>
     </nav>
     <!--   ////////////////////////////////// contenido //////////////////////////////////////////////////////////////////// -->
     <div class="container">
         <div class="todo-app">
             <h2 class="text-center mb-5">Lista Telefonica</h2>
 
-            <div id="tabla" class="container mt-5">
+            <div id="tabla" class="container mt-3">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-20">
                         <table class="table">
                             <thead class="thead-dark">
                                 <tr class="text-center">
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
-                                    <th>Numero Teléfonico</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Apellido</th>
+                                    <th scope="col">Numero Teléfonico</th>
                                 </tr>
                             </thead>
                             <tbody class="text-center" id="ListaContactos"></tbody>

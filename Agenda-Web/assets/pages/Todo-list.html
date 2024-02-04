@@ -5,62 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tareas</title>
-    <link rel="stylesheet" href="../Styles/styleTodoList.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css ">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="../Styles/styleTodoList.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css ">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <!--       menu desplegable -->
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-            <ul class="navbar-nav active">
-                <li class="nav-item">
-                    <a style="margin-left: 30px; border: none" class="btn btn-outline-light" href="./NuevoContacto.html"><img
-                            src="../resource/agregar.png" alt="" width="25">Nuevo Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a style="margin-left: 10px; border: none" class="btn btn-outline-light" href="./contactos.html"><img
-                            src="../resource/lista.png" alt="" width="25">Lista Contactos</a>
-                </li>
-                <li class="nav-item">
-                    <a style="margin-left: 10px; border: none" class="btn btn-outline-light" href="./DetalleContacto.html"><img
-                            src="../resource/detalles.png" alt="" width="25">Detalles Contactos</a>
-                </li>
-                <li class="nav-item">
-                    <a style="margin-left: 10px; border: none" class="btn btn-outline-light" href="./Favorito.html"><img
-                            src="../resource/favorito.png" alt="" width="25">Favoritos</a>
-                </li>
-                <li class="nav-item">
-                    <a style="margin-left: 10px; border: none" class="btn btn-outline-light" href="./Todo-list.html"><img
-                            src="../resource/tarea.png" alt="" width="25">Tareas</a>
-                </li>
-            </ul>
+    <nav class="main-nav">
 
-        <div class="dropdown">
-            <button style="border: none; margin-right: 30px;" class="btn btn-outline-light dropdown-toggle"
-                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Admin
-            </button>
-            <div class="dropdown-menu text-center dropdown-menu-right" aria-labellebdy="dropdownMenuButton">
-                <li class="nav-item">
-                    <a type="submit" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#usuario">
-                        <img src="../resource/usuario.png" alt="" width="25">Usario
-                    </a>
-                </li>
-                <div class="dropdown-divider"></div>
-                <form action="Validar" method="POST">
-                    <button name="accion" name="Salir" class="dropdown-item" href="#">Salir</button>
-                </form>
+
+        <ul class="main-menu" id="main-menu">
+            <li class="main-menu_item">
+                <a style="margin-left: 30px; border: none" class="main-menu_link" href="./NuevoContacto.html"><img
+                        src="../resource/agregar.png" alt="" width="25">Nuevo Contacto</a>
+            </li>
+            <li class="main-menu_item">
+                <a style="margin-left: 10px; border: none" class="main-menu_link" href="./contactos.html"><img
+                        src="../resource/lista.png" alt="" width="25">Lista Contactos</a>
+            </li>
+            <li class="main-menu_item">
+                <a style="margin-left: 10px; border: none" class="main-menu_link" href="./DetalleContacto.html"><img
+                        src="../resource/detalles.png" alt="" width="25">Detalles
+                    Contactos</a>
+            </li>
+            <li class="main-menu_item">
+                <a style="margin-left: 10px; border: none" class="main-menu_link" href="./Favorito.html"><img
+                        src="../resource/favorito.png" alt="" width="25">Favoritos</a>
+            </li>
+            <li class="main-menu_item">
+                <a style="margin-left: 10px; border: none" class="main-menu_link" href="./Todo-list.html"><img
+                        src="../resource/tarea.png" alt="" width="25">Tareas</a>
+            </li>
+
+            <div class="dropdown">
+                <button style="border: none; margin-left: 0px;" class="btn btn-outline-light dropdown-toggle"
+                    type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Admin
+                </button>
+                <div class="dropdown-menu text-center dropdown-menu-left" aria-labellebdy="dropdownMenuButton">
+                    <li class="nav-item">
+                        <a type="submit" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#usuario">
+                            <img src="../resource/usuario.png" alt="" width="25">Usario
+                        </a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <form action="Validar" method="POST">
+                        <button name="accion" name="Salir" class="dropdown-item" href="#">Salir</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
 
+        </ul>
+    </nav>
     <div class="container">
         <div class="todo-app">
             <h2>To-Do List <img src="../resource/lista.png"></h2>
@@ -79,7 +77,7 @@
                 <li>Task 2</li>
                 <li>Task 3</li>-->
             </ul>
-            <h3>Prioridad: Urgente</h3>
+            <h3>Prioridad: Necesaria</h3>
             <ul class="list-container-urgente">
                 <!--<li class="checked">Task 1</li>
                 <li>Task 2</li>

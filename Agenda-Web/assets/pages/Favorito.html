@@ -12,53 +12,52 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <!--       menu desplegable -->
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul class="navbar-nav active">
-            <li class="nav-item">
-                <a style="margin-left: 30px; border: none" class="btn btn-outline-light"
-                    href="./NuevoContacto.html"><img src="../resource/agregar.png" alt="" width="25">Nuevo Contacto</a>
+    <nav class="main-nav">
+
+
+        <ul class="main-menu" id="main-menu">
+            <li class="main-menu_item">
+                <a style="margin-left: 30px; border: none" class="main-menu_link" href="./NuevoContacto.html"><img
+                        src="../resource/agregar.png" alt="" width="25">Nuevo Contacto</a>
             </li>
-            <li class="nav-item">
-                <a style="margin-left: 10px; border: none" class="btn btn-outline-light" href="./contactos.html"><img
+            <li class="main-menu_item">
+                <a style="margin-left: 10px; border: none" class="main-menu_link" href="./contactos.html"><img
                         src="../resource/lista.png" alt="" width="25">Lista Contactos</a>
             </li>
-            <li class="nav-item">
-                <a style="margin-left: 10px; border: none" class="btn btn-outline-light"
-                    href="./DetalleContacto.html"><img src="../resource/detalles.png" alt="" width="25">Detalles
+            <li class="main-menu_item">
+                <a style="margin-left: 10px; border: none" class="main-menu_link" href="./DetalleContacto.html"><img
+                        src="../resource/detalles.png" alt="" width="25">Detalles
                     Contactos</a>
             </li>
-            <li class="nav-item">
-                <a style="margin-left: 10px; border: none" class="btn btn-outline-light" href="./Favorito.html"><img
+            <li class="main-menu_item">
+                <a style="margin-left: 10px; border: none" class="main-menu_link" href="./Favorito.html"><img
                         src="../resource/favorito.png" alt="" width="25">Favoritos</a>
             </li>
-            <li class="nav-item">
-                <a style="margin-left: 10px; border: none" class="btn btn-outline-light" href="./Todo-list.html"><img
+            <li class="main-menu_item">
+                <a style="margin-left: 10px; border: none" class="main-menu_link" href="./Todo-list.html"><img
                         src="../resource/tarea.png" alt="" width="25">Tareas</a>
             </li>
-        </ul>
 
-        <div class="dropdown">
-            <button style="border: none; margin-right: 30px;" class="btn btn-outline-light dropdown-toggle"
-                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Admin
-            </button>
-            <div class="dropdown-menu text-center dropdown-menu-right" aria-labellebdy="dropdownMenuButton">
-                <li class="nav-item">
-                    <a type="submit" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#usuario">
-                        <img src="../resource/usuario.png" alt="" width="25">Usario
-                    </a>
-                </li>
-                <div class="dropdown-divider"></div>
-                <form action="Validar" method="POST">
-                    <button name="accion" name="Salir" class="dropdown-item" href="#">Salir</button>
-                </form>
+            <div class="dropdown">
+                <button style="border: none; margin-left: 0px;" class="btn btn-outline-light dropdown-toggle"
+                    type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Admin
+                </button>
+                <div class="dropdown-menu text-center dropdown-menu-left" aria-labellebdy="dropdownMenuButton">
+                    <li class="nav-item">
+                        <a type="submit" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#usuario">
+                            <img src="../resource/usuario.png" alt="" width="25">Usario
+                        </a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <form action="Validar" method="POST">
+                        <button name="accion" name="Salir" class="dropdown-item" href="#">Salir</button>
+                    </form>
+                </div>
             </div>
-        </div>
+
+        </ul>
     </nav>
     <!--   ////////////////////////////////// contenido //////////////////////////////////////////////////////////////////// -->
     <div id="tabla" class="container mt-5">
